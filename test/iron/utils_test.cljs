@@ -19,9 +19,7 @@
     :a-b?    :aB
     :foo/a   :foo/a
     :foo/a-b :foo/aB
-    ::x?     ::x)
-  (run! #(is (= % (utils/camelize-key %)))
-        utils/preserved-keys))
+    ::x?     ::x))
 
 (deftest camelize-map-keys
   (is (= {:word :word                  ;; Simple

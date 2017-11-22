@@ -3,7 +3,6 @@
 
 (ns iron.utils
   (:require
-   [clojure.set]
    [clojure.spec.alpha :as s]
    [clojure.string :as str]))
 

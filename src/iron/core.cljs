@@ -8,8 +8,6 @@
    [iron.re-utils :refer [<sub >evt]]
    [iron.utils :as utils]))
 
-(s/def :iron/size #{:tiny :small :medium :large :huge})
-
 (defn- negligible?
   [x]
   (if (seqable? x) (empty? x) (not x)))
