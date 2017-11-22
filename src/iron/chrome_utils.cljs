@@ -1,7 +1,7 @@
 ;;; Author: David Goldfarb (deg@degel.com)
 ;;; Copyright (c) 2017, David Goldfarb
 
-(ns sodium.chrome-utils)
+(ns iron.chrome-utils)
 
 (defn console-dir
   "Inspect an object in the Chrome console, preceded by a text message.

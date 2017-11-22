@@ -1,3 +1,3 @@
-# Introduction to sodium
+# Introduction to iron
 
 TODO: write [great documentation](http://jacobian.org/writing/what-to-write/)

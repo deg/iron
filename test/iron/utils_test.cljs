@@ -1,6 +1,6 @@
-(ns sodium.utils-test
+(ns iron.utils-test
   (:require [cljs.test :refer-macros [deftest testing is are]]
-            [sodium.utils :as utils]))
+            [iron.utils :as utils]))
 
 (deftest camelize-str
   (are [pre-string post-string] (= (utils/camelize-str pre-string) post-string)

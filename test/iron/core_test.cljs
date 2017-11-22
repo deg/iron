@@ -1,4 +1,4 @@
-(ns sodium.core-test
+(ns iron.core-test
   (:require [cljs.test :refer-macros [deftest testing is are]]
-            [sodium.core :as na]))
+            [iron.core :as na]))
 

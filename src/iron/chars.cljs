@@ -1,7 +1,7 @@
 ;;; Author: David Goldfarb (deg@degel.com)
 ;;; Copyright (c) 2017, David Goldfarb
 
-(ns sodium.chars)
+(ns iron.chars)
 
 ;;; Names for commonly-used unicode characters
 ;;; [TODO] This list is still embarassingly empty. Fill in.

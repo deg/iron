@@ -1,12 +1,12 @@
 ;;; Author: David Goldfarb (deg@degel.com)
 ;;; Copyright (c) 2017, David Goldfarb
 
-(ns sodium.re-utils
+(ns iron.re-utils
   (:require
    [clojure.spec.alpha :as s]
    [clojure.string :as str]
    [re-frame.core :as re-frame]
-   [sodium.utils :as utils]))
+   [iron.utils :as utils]))
 
 
 (defn sub2
