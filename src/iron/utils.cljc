@@ -7,6 +7,12 @@
    [clojure.string :as str]))
 
 
+(defn negligible?
+  "Variant of empty? that behaves reasonably for non-seqs too."
+  [x]
+  (if (seqable? x) (empty? x) (not x)))
+
+
 (defn ci-compare
   "Case-insensitive string compare"
   [s1 s2]
@@ -79,6 +85,7 @@
                       v))
              {} m))
 
+;;; [TODO] Merge this with re-frame/console copy and chrome_utils.cljs
 (defn err
   "Simple helper to show an error message in Clojure or ClojureScript"
   [& strings]

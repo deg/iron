@@ -21,10 +21,6 @@ and have only addded functionality that I need and can test.  Iron will only gro
 it helps me (or other contributers) accomplish what they need. If you need features now,
 PRs are welcome.
 
-### Background
-
-TBD
-
 ## Setup
 
 [![Clojars Project](https://img.shields.io/clojars/v/com.degel/iron.svg)](https://clojars.org/com.degel/iron)
@@ -42,34 +38,6 @@ feature by sym-linking directly to your copy of Sodium.
 Iron is a library, with a grab-bag of functions for re-frame projects. You can use it in
 several ways:
 
-### Data-in and -out
-
-Iron offers the following:
-
-- `fe/>event`, `fe/>events` and `fe/>atom` - Create `:on-*` handlers to
-  pass a value to a re-frame event or react atom.
-- `fe/<atom` - Get a value from a react atom.
-
-#### Typical usage
-
-````
-(defn login-panel []
-  (let [email (reagent/atom "")
-        password (reagent/atom "")]
-    (fn []
-      [na/form {}
-       [na/form-input {:label "Email"
-                       :type "email"
-                       :on-change (fe/>atom email)}]
-       [na/form-input {:label "Password"
-                       :type "password"
-                       :on-change (fe/>atom password)}]
-       [na/form-button {:content "Login"
-                        :on-click (fe/>event [:login @email @password])}]])))
-````
-
-These functions work equally with with Sodium components and any others.
-
 ### Helper functions
 
 These are some some of the functions that I've needed often in re-frame projects. I
@@ -77,13 +45,18 @@ expect this will grow rapidly with time. PRs are welcome here, though I'm likely
 opinionated about what I accept.
 
 #### In `iron.utils`
-- `ci-compare`, `ci-sort`, and `ci-includes?` - Case-insensitive string functions
+- `negligible?` - Variant of empty? that behaves reasonably for non-seqs too
+- `ci-compare`, `ci-sort`, `ci-sort-by`, and `ci-includes?` - Case-insensitive string functions
 - `validate` - Wrapper for Clojure specs checking in pre-conditions.
+- `vconcat` - Like concat, but returns a vector
 - "Camelize" functions - Convert Clojure-style names to JavaScript style
 
 #### In `iron.re-utils`
-- `<sub` and `>evt` - Re-frame wrappers, taken from <https://lambdaisland.com/blog/11-02-2017-re-frame-form-1-subscriptions>
 - `sub2` - Shorthand for a simple re-frame 'level-2' subscription (one that simply accesses the db)
+- ``>evt` - Wrapper around re-frame/dispatch, with added sugar for defaults and coersions
+- `<sub` - Shorthand for re-frame subscribe and immediate deref
+- `event->fn` - Allow re-frame events to be used in contexts that expect a function
+- `sub->fn -`Allow re-frame subscriptions to be used in contexts that expect a function
 
 #### In `iron.chars`
 
@@ -93,15 +66,15 @@ Definitions for a few common Unicode characters.
 
 ### Testing
 
-`lein doo phantom test auto` will run the few unit tests I've written so far. More are
-needed. PRs especially welcome here.
+`lein doo phantom test auto` will run the (embarrasingly few) unit tests I've written so
+far. More are needed. PRs especially welcome here.
 
 ## Useful references
 
 - https://semantic-ui.com/
 - https://react.semantic-ui.com/introduction
 - https://github.com/Semantic-Org/Semantic-UI-React
-- https://github.com/gadfly361/soda-ashsoda
+- https://github.com/gadfly361/soda-ash
 
 
 ## Questions

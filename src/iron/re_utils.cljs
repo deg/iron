@@ -19,8 +19,20 @@
 
 ;; Ideas based on https://lambdaisland.com/blog/11-02-2017-re-frame-form-1-subscriptions
 
-(def >evt "Shorthand for re-frame dispatch to event."
-  re-frame/dispatch)
+(defn >evt
+  "Shorthand for re-frame dispatch to event.
+  The two-argument form appends a value into the event.
+  The three-argument form offers more control over this value, letting
+  you specify a default value for it and/or a coercer (casting) function"
+  ([event]
+   (re-frame/dispatch event))
+  ([event value]
+   (re-frame/dispatch (conj event value)))
+  ([event value {:keys [default coercer] :or {coercer identity}}]
+   (>evt event
+         (coercer (if (utils/negligible? value)
+                    default
+                    value)))))
 
 (defn <sub
   "Shorthand for re-frame subscribe and deref."
@@ -40,11 +52,6 @@
     #(key-fn (conj vec-or-fn %))
     vec-or-fn))
 
-;; [TODO]
-;; - sub->fn should not expect a parameter (right?)
-;; - Write doc string for sub->fn
-;; - Fix the core >/< functions to use these, rather than duplicating them
-
 
 (defn event->fn
   "For contexts that want to pass an argument to a sink function: accept
@@ -54,6 +61,9 @@
   [event-or-fn]
   (vec->fn event-or-fn >evt))
 
-(defn sub->fn [sub-or-fn]
-  (vec->fn sub-or-fn <sub))
 
+(defn sub->fn
+  "Accept either a re-frame sub or a function, for contexts that demand
+  a function."
+  [sub-or-fn]
+  (vec->fn sub-or-fn <sub))
