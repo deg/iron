@@ -7,7 +7,7 @@ Iron is support for code for my ClojureScript projects; initially for
 
 ### Why "Iron"?
 
-Sodium came first, and got its name from react, Soda-ash, and Semantic-UI. See its
+Sodium came first, and got its name from React, Soda-ash, and Semantic-UI. See its
 [readme](https://github.com/deg/sodium/blob/master/README.md) for the punny details.
 
 Iron is intended to hold the shared parts used by Sodium and other related libraries,
@@ -53,7 +53,7 @@ opinionated about what I accept.
 
 #### In `iron.re-utils`
 - `sub2` - Shorthand for a simple re-frame 'level-2' subscription (one that simply accesses the db)
-- ``>evt` - Wrapper around re-frame/dispatch, with added sugar for defaults and coersions
+- `>evt` - Wrapper around re-frame/dispatch, with added sugar for defaults and coersions
 - `<sub` - Shorthand for re-frame subscribe and immediate deref
 - `event->fn` - Allow re-frame events to be used in contexts that expect a function
 - `sub->fn -`Allow re-frame subscriptions to be used in contexts that expect a function

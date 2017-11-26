@@ -1,6 +1,6 @@
 (defproject
-  com.degel/iron "0.1.0-SNAPSHOT"
-  :description "Front-end utilities and support for my ClojureScript and re-frame projects"
+  com.degel/iron "0.1.0"
+  :description "Front-end utilities and support for ClojureScript and re-frame projects"
   :url "https://github.com/deg/sodium"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
