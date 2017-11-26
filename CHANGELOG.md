@@ -11,7 +11,7 @@ _(nothing)_
 _(nothing)_
 
 
-## [0.1.0] - 2017-11-26
+## [0.1.1] - 2017-11-26
 This first version of Iron was extracted from [Sodium](https://github.com/deg/sodium),
 including only the parts that are independent of
 [soda-ash](https://github.com/gadfly361/soda-ash) or
@@ -29,5 +29,5 @@ like. This change-note lists changes relative to Sodium v0.8.0.
 - `>events` is gone. It will probably come back someday, but not until someone needs and tests
 - `>atom` and `<atom` are gone. The few parts that were useful are in sodium.core/value->event-fn
 
-[Unreleased]: https://github.com/deg/iron/compare/HEAD...HEAD
-[0.1.0]: https://github.com/deg/iron/compare/6e80201...HEAD
+[Unreleased]: https://github.com/deg/iron/compare/cdcb5e0...HEAD
+[0.1.1]:      https://github.com/deg/iron/compare/6e80201...cdcb5e0
