@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 ### Changed
-_(nothing)_
+- Updated Clojure to released 1.9.0
 ### Added
 - iron.closure-utils/debug? - Are we in dev or production release?
 ### Removed
