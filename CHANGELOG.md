@@ -2,13 +2,21 @@
 
 ## [Unreleased]
 ### Changed
-- Updated Clojure to released 1.9.0
+_(nothing)_
 ### Added
-- iron.closure-utils/debug? - Are we in dev or production release?
+_(nothing)_
 ### Removed
 _(nothing)_
 ### Fixed
 _(nothing)_
+
+
+## [0.2.0] - 2018-1-16
+No major changes. Releasing just because it's been a snapshot for too long.
+### Changed
+- Updated Clojure to released 1.9.0
+### Added
+- iron.closure-utils/debug? - Are we in dev or production release?
 
 
 ## [0.1.1] - 2017-11-26
@@ -30,4 +38,5 @@ like. This change-note lists changes relative to Sodium v0.8.0.
 - `>atom` and `<atom` are gone. The few parts that were useful are in sodium.core/value->event-fn
 
 [Unreleased]: https://github.com/deg/iron/compare/cdcb5e0...HEAD
+[0.2.0]:      https://github.com/deg/iron/compare/cdcb5e0...HEAD
 [0.1.1]:      https://github.com/deg/iron/compare/6e80201...cdcb5e0
