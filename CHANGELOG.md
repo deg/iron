@@ -4,7 +4,7 @@
 ### Changed
 _(nothing)_
 ### Added
-_(nothing)_
+- check-and-throw - for spec-driven app-db validation
 ### Removed
 _(nothing)_
 ### Fixed

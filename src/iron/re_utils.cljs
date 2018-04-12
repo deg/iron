@@ -4,8 +4,10 @@
 (ns iron.re-utils
   (:require
    [clojure.spec.alpha :as s]
+   [expound.alpha :as expound]
    [clojure.string :as str]
    [re-frame.core :as re-frame]
+   [iron.closure-utils :refer [debug?]]
    [iron.utils :as utils]))
 
 
@@ -67,3 +69,14 @@
   a function."
   [sub-or-fn]
   (vec->fn sub-or-fn <sub))
+
+
+;;; (See https://github.com/Day8/re-frame/blob/master/examples/todomvc/src/todomvc/events.cljs)
+(defn check-and-throw
+  "Throws an exception if `db` doesn't match the Spec `a-spec`."
+  [a-spec db]
+  (when (and debug?
+             (not (s/valid? a-spec db)))
+    (throw (ex-info (binding [s/*explain-out* expound/printer]
+                      (s/explain a-spec db))
+                    {}))))

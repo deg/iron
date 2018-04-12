@@ -57,6 +57,7 @@ opinionated about what I accept.
 - `<sub` - Shorthand for re-frame subscribe and immediate deref
 - `event->fn` - Allow re-frame events to be used in contexts that expect a function
 - `sub->fn -`Allow re-frame subscriptions to be used in contexts that expect a function
+- `check-and-throw` - Helper for spec-driven app-db validation.
 
 #### In `iron.chars`
 
