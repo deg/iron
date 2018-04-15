@@ -1,13 +1,13 @@
 (defproject
-  com.degel/iron "0.3.0-SNAPSHOT"
+  com.degel/iron "0.3.0"
   :description "Front-end utilities and support for ClojureScript and re-frame projects"
   :url "https://github.com/deg/iron"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.9.0"]
-                 [org.clojure/clojurescript "1.9.946"]
+                 [org.clojure/clojurescript "1.10.238"]
                  [expound "0.5.0"]
-                 [re-frame "0.10.2"]
+                 [re-frame "0.10.5"]
                  [reagent "0.7.0"]]
   :plugins [[lein-cljsbuild "1.1.7"]
             [lein-doo "0.1.8"]]

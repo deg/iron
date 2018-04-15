@@ -4,11 +4,19 @@
 ### Changed
 _(nothing)_
 ### Added
-- check-and-throw - for spec-driven app-db validation
+_(nothing)_
 ### Removed
 _(nothing)_
 ### Fixed
 _(nothing)_
+
+
+## [0.3.0] - 2018-4-15
+### Changed
+- Updated dependencies: CLJS to 1.10.238; re-frame to 0.10.5
+### Added
+- check-and-throw - for spec-driven app-db validation
+
 
 
 ## [0.2.0] - 2018-1-16
