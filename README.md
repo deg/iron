@@ -85,6 +85,6 @@ I can usually be found on the [Clojurians Slack](https://clojurians.net) #reagen
 
 ## License
 
-Copyright © 2017, David Goldfarb <deg@degel.com>
+Copyright © 2017-2018, David Goldfarb <deg@degel.com>
 
 Licensed under the Eclipse Public License.

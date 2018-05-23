@@ -1,5 +1,5 @@
 (defproject
-  com.degel/iron "0.4.0-SNAPSHOT"
+  com.degel/iron "0.4.0"
   :description "Front-end utilities and support for ClojureScript and re-frame projects"
   :url "https://github.com/deg/iron"
   :license {:name "Eclipse Public License"
