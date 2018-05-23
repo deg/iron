@@ -50,8 +50,8 @@ like. This change-note lists changes relative to Sodium v0.8.0.
 - `>events` is gone. It will probably come back someday, but not until someone needs and tests
 - `>atom` and `<atom` are gone. The few parts that were useful are in sodium.core/value->event-fn
 
-[Unreleased]: https://github.com/deg/iron/compare/HEAD...HEAD
-[0.4.0]:      https://github.com/deg/iron/compare/2a39914...HEAD
+[Unreleased]: https://github.com/deg/iron/compare/f5058c3...HEAD
+[0.4.0]:      https://github.com/deg/iron/compare/2a39914...f5058c3
 [0.3.0]:      https://github.com/deg/iron/compare/0352644...2a39914
 [0.2.0]:      https://github.com/deg/iron/compare/cdcb5e0...0352644
 [0.1.1]:      https://github.com/deg/iron/compare/6e80201...cdcb5e0
