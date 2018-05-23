@@ -8,9 +8,12 @@
 
 
 (defn negligible?
-  "Variant of empty? that behaves reasonably for non-seqs too."
+  "Variant of empty? that behaves reasonably for non-seqs too.
+  Note that nil is negligible but false is not negligible."
   [x]
-  (if (seqable? x) (empty? x) (not x)))
+  (cond (seqable? x) (empty? x)
+        (boolean? x) false
+        :else (not x)))
 
 
 (defn ci-compare
