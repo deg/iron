@@ -17,7 +17,7 @@ the focus is on front-end code, `fe-ium`.  And, of course, FE is iron. So, there
 ### State of this project
 
 Iron is still a early work in progress. I am using it to help me with other projects
-and have only addded functionality that I need and can test.  Iron will only grow as
+and have only added functionality that I need and can test. Iron will only grow as
 it helps me (or other contributers) accomplish what they need. If you need features now,
 PRs are welcome.
 
